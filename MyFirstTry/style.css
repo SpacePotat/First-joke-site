@@ -1,0 +1,8 @@
+.card {
+    background-color: chocolate;
+    color:azure;
+    padding: 25px;
+    border-radius: 20px;
+    width: 250px;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Точно не вирус</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Прошу минуточку внимания</h1>
+
+    <div class="inf">я маленький вирус сделаный в горах Дагестана местными людьми,
+        из-за недостатка опыта моих создателей я не могу сам навредить вам,
+        поэтому от чистого сердца, понажимайте там всякие кнопки, поломайте свой комп сами,
+        и вышлете моему создателю данные вашей карточки и пароли от почт и аккаунтов.
+    </div>
+
+    <p2>от чистого сердца, Вирус </p2>
+
+    <div class="buton"><button onclick="downloadFile()">нажмите чтобы скачать майнер на ваше устройство</button>
+
+    <script>
+        function downloadFile() {
+            const newWindow = window.open("", "-blank");
+            newWindow.document.write(`
+            <h1>Подождите пока майнер запуститься</h1>
+            <p>это может занять со скоростю дагестанского интернета примерно 1 день...</p>
+            `);
+            newWindow.print();
+        }
+    </script></div>
+    <img src="Foto/roflyan.jpg">
+
+</div>
+</body>
+</html>

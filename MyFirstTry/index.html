@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Мой первый сайт</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="color: chocolate; background-color: rgb(188, 177, 149);">
+    
+    
+
+    <h1>Привет, меня зовут Sasha</h1>
+
+    <div class="card">
+        <h2>Саша</h2>
+        <p> хочю стать програмистом</p>
+    </div>
+
+    <p>Я живу в Нидерландах и учусь на программиста.</p>
+
+    <h2>Моя цель:</h2>
+    <p>Стать веб-разработчиком и переехать в англоязычную страну.</p>
+
+    <h2>Мой распорядок дня:</h2>
+    <ul>
+        <li>7:10 — подъём</li>
+        <li>8:30 — колледж</li>
+        <li>16:00 — украинская школа</li>
+        <li>22:00 — изучаю программирование</li>
+    </ul>
+
+    <table border="1">
+        <tr>
+            <th>Место проживания</th>
+            <th>Куда хочю переехать</th>
+        </tr>
+        <tr>
+            <td>Лееуварден</td>
+            <td>В США</td>
+        </tr>
+    </table>
+
+    <button onclick="downloadFile()">скачать файл</button>
+
+    <script>
+        function downloadFile() {
+            const element = document.createElement("a");
+            element.href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+            element.download = "myfile.pdf";
+            element.click();
+        }
+    
+
+    </script>
+    
+    <button onclick="createPDF()">создать редактируемый пдф файл</button>
+
+    <script>
+function createPDF() {
+    const newWindow = window.open("", "_blank");
+    newWindow.document.write(`
+        <h1>Привет!</h1>
+        <p>Это мой первый сгенерированный PDF 😎</p>
+        <p>Я учусь программировать!</p>
+    `);
+    newWindow.print();
+}
+</script>
+
+    <script>
+function test() {
+    console.log("Работает");
+}
+
+test(); 
+</script>
+
+    <p>Это мой первый сайт 🚀</p>
+
+    <p>Нажми H и увидишь магию</p>
+
+    <script>
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "h") {
+                downloadFile();
+            }
+        });
+
+        function downloadFile() {
+            const element = document.createElement("a");
+            element.href = "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf";
+            element.download = "file.pdf";
+            element.click();
+        }
+    </script>
+
+    <a href="https://google.com">Перейти в Google</a>
+
+    <a href="https://google.com" target="_blank">Перейти в Google, но в новой вкладке</a>
+
+    <img src="Foto/d4fb56f50ebe2db17fff7dff309476ac.jpg">
+
+
+</body>
+</html>
