@@ -1,5 +1,6 @@
 body {
-    background-color: aquamarine;
+    background-image: url("Foto/2ad5b0c33e8f7fce65f3b683bb1c01d2.jpg");
+    background-color: rgb(1, 87, 58);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +12,7 @@ body {
 .container {
     text-align: center;
     max-width: 600px;
-    background: white;
+    background: rgb(0, 0, 0);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
@@ -19,7 +20,7 @@ body {
 
 
 h1 {
-    color: blueviolet;
+    color: rgb(70, 226, 43);
     align-items: start;
     justify-content: center;
 }
@@ -29,9 +30,18 @@ h1 {
 }
 
 .buton {
+    background-color: black;
+    color: chartreuse;
+    transition: 0.5s;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: rgb(0, 255, 119);
+    transform: scale(1.10);
 }
 
 .signature {
