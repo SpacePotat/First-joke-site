@@ -7,6 +7,7 @@ body {
     font-style: italic;
     margin: 0%;
     height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container {
@@ -17,6 +18,7 @@ body {
     border: 2px solid rgb(0, 255, 17);
     border-color: darkseagreen;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 
@@ -42,6 +44,7 @@ h1 {
 button {
     background-color: black;
     color: chartreuse;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 button:hover {
@@ -55,10 +58,21 @@ button:hover {
     font-style: italic;
 }
 
-img {
+.img1 {
     width: 225px;
     height: 225px;
     padding: 40px;
     border: 2px solid rgb(0, 255, 17);
 }
+
+.closebtn {
+    position: absolute;
+    color: chartreuse;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
 
