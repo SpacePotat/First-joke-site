@@ -1,0 +1,28 @@
+body {
+    background-image: url(Foto/minecraftsunset.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    margin: 0%;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    font-family: 'Press start 2P', cursive;
+    color: gold;
+
+
+}
+
+.mcontaineer {
+    color: burlywood;
+}
+
+#rocks {
+    display: flex;
+}
