@@ -13,11 +13,26 @@
 
 
     <div id="rocks">
-        <img class="rock" src="Foto/Andesite_JE3_BE2.webp">
-        <img class="rock" src="Foto/Diorite_JE4_BE3.webp">
-        <img class="rock" src="Foto/Granite_JE2_BE2.webp">
+        <img class="rock" src="Foto/Andesite_JE3_BE2.webp" onclick="openWindow()">
+        <img class="rock1" src="Foto/Diorite_JE4_BE3.webp" onclick="openWindow1()">
+        <img class="rock2" src="Foto/Granite_JE2_BE2.webp" onclick="openWindow2()">
     </div>
 
+    <div id="rocktekst1", class="rocktekst1">
+        <p>This stone is simmilar to regular one, but it has another structure with more sharps and cracks.</p>
+        <button onclick="closeWindow()">Close</button>
+    </div>
+
+    <div id="rocktekst2", class="rocktekst2">
+        <p>This stone is white and much simmilar to greece's marble.</p>
+        <button onclick="closeWindow1()">Close</button>
+    </div>
+
+    <div id="rocktekst3", class="rocktekst3">
+        <p>This stone has unique color, and can be good addition to your house.</p>
+        <button onclick="closeWindow2()">Close</button>
+    </div>
+    
     
 
     <div class="mcontaineer">
@@ -27,6 +42,37 @@
 
 
     </div>
+
+    <script>
+        function openWindow() {
+            document.getElementById("rocktekst1").style.display = "block";
+        }
+
+        function closeWindow() {
+            document.getElementById("rocktekst1").style.display = "none";
+        }
+
+    </script>
+
+    <script>
+        function openWindow1() {
+            document.getElementById("rocktekst2").style.display = "block";
+        }
+
+        function closeWindow1() {
+            document.getElementById("rocktekst2").style.display = "none";
+        }
+    </script>
+
+    <script>
+        function openWindow2() {
+            document.getElementById("rocktekst3").style.display = "block";
+        }
+
+        function closeWindow2() {
+            document.getElementById("rocktekst3").style.display = "none";
+        }
+    </script>
 
 <!--changelog under-->
 
