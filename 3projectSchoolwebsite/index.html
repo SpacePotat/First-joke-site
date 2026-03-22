@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School website main</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>(titel tekst)</h1>
@@ -12,21 +13,23 @@
 
     <p2>(more info)</p2>
 
-    <button onclick="TeacherAlert()">(Info about teachers)</button>
-    
+    <button onclick="TeacherInfo()">(Info about teachers)</button>
+
+
     <script>
-        function TeacherAlert() {
-            alert("(more teachers info)");
+        function TeacherInfo() {
+            document.getElementById("TeacherInfo").style.display = "block";
         }
+
+        function closeWindow() {
+            document.getElementById("Teacherinfo").style.display = "none";
+        }
+        
     </script>
 
-    <button onclick="SchoolCaontactAlert()">(social media of school)</button>
     
-    <script>
-        function SchoolCaontactAlert() {
-            alert("(more school info)");
-        }
-    </script>
+
+    <button onclick="SchoolCaontactAlert()">(social media of school)</button>
 
     <div id="TeacherInfo", class="MoreInfo">
         <p1>(Info about techer 1)</p1>
@@ -34,6 +37,7 @@
         <p3>(Info about techer 3)</p3>
         <p4>(Info about techer 4)</p4>
         <p5>(Info about techer 5)</p5>
+        <button onclick="closeWindow">close window</button>
     </div>
 </body>
 </html>
