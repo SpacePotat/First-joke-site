@@ -1,3 +1,14 @@
 .MoreInfo {
     display: none;
 }
+
+body {
+    background-image: url(Foto/be9bd281fbc4024eaf4d0e6bff950571.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
